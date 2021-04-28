@@ -1,0 +1,92 @@
+body {
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+}
+h1,
+h2,
+h3 {
+  margin: 0 0 0 30px;
+}
+h1 {
+  font-size: 25px;
+}
+h2 {
+  font-size: 17px;
+}
+h3 {
+  font-size: 16px;
+}
+.card {
+  border-radius: 1.25rem;
+  display: block;
+  margin: 0 auto;
+  min-width: 0px;
+  max-width: 600px;
+  word-wrap: break-word;
+  background-image: linear-gradient(to right, #243949 0%, #517fa4 100%);
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+.search-field {
+  max-width: 40%;
+  margin: 15px 0px 0px 120px;
+  border-radius: 5px;
+}
+.submit-button {
+  padding: 2px 3px;
+  color: #fff;
+  background-color: #263d4e;
+  border-width: 2px;
+  border-color: grey black black grey;
+}
+.submit-button:hover {
+  background-color: #fff;
+  border-color: grey black black grey;
+  color: #263d4e;
+  cursor: pointer;
+}
+#location-button {
+  background-color: #263d4e;
+  border-radius: 0.25rem;
+}
+#location-button:hover {
+  background-color: #fff;
+  color: #263d4e;
+  cursor: pointer;
+}
+.today {
+  margin-top: 20px;
+}
+#temp-today {
+  font-size: 30px;
+  margin: 0 0 0 30px;
+}
+#degrees-today {
+  font-size: 15px;
+}
+.units {
+  font-size: 14px;
+}
+.conditions {
+  margin: 30px 15px 30px 30px;
+  font-size: 12px;
+}
+.sunrise {
+  margin: 0;
+}
+.wind {
+  margin: 0px;
+}
+.snowflake {
+  position: relative;
+  top: 40px;
+  left: 50px;
+  font-size: 120px;
+}
+.hour {
+  margin-left: 5px;
+}
+.temperature {
+  margin: 0 0 30px 5px;
+}

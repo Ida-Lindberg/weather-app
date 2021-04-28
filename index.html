@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="src/style.css">
+    <script src="https://kit.fontawesome.com/ab3f42d3e0.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <form id="search-form">
+                <div class="search">
+                    <input type="search" class="search-field" placeholder="Enter City" autofocus="on" id="city-input">
+                    <button type="submit" class="btn btn-primary submit-button">Search</button>
+                    <input id="location-button" type="submit" value="📍" />
+            </form>
+        </div>
+        </form>
+        <div class="row">
+            <div class="col-6 today">
+                <h1 id="city">London</h1>
+                <h2>day 15:43</h2>
+                <h3 id="description"> Snow</h3>
+                <span id="temp-today">5 </span>
+                <span class="units">
+                    <a href="#" id="celsius-link">°C</a> |
+                    <a href="#" id="fahrenheit-link">°F</a>
+            </div>
+            <div class="col-6">
+                <i class="fas fa-snowflake snowflake"></i>
+            </div>
+        </div>
+
+        <div class="conditions">
+            <!-- <p class="sunrise">Sunrise <span id="sunrise"> 3:57</span> Sunset <span id="sunset">22:09</span></p>-->
+            <p class="wind">Wind speed <span id="wind-today">4</span> Km/h</p>
+            <p class="humidity">Humidity <span id="humidity">0</span> %</p>
+        </div>
+
+        <div class="row hour">
+            <div class="col-2">
+                <div class="hour2">6:00</div>
+            </div>
+            <div class="col-2">
+                <div class="hour3">10:00</div>
+            </div>
+            <div class="col-2">
+                <div class="hour4">12:00</div>
+            </div>
+            <div class="col-2">
+                <div class="hour5">14:00</div>
+            </div>
+            <div class="col-2">
+                <div class="hour6">20:00</div>
+            </div>
+            <div class="col-2">
+                <div class="hour7">23:00</div>
+            </div>
+        </div>
+
+        <div class="row temperature">
+            <div class="col-2">
+                <div class="temp">5°C 🌧</div>
+            </div>
+            <div class="col-2">
+                <div class="temp">8°C 🌦</div>
+            </div>
+            <div class="col-2">
+                <div class="temp">10°C 🌤</div>
+            </div>
+            <div class="col-2">
+                <div class="temp">10°C 🌤</div>
+            </div>
+            <div class="col-2">
+                <div class="temp">10°C 🌤</div>
+            </div>
+            <div class="col-2">
+                <div class="temp">10°C 🌤</div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    <script src="src/app.js"></script>
+</body>
+
+</html>
