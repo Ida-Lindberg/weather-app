@@ -90,3 +90,8 @@ h3 {
 .temperature {
   margin: 0 0 30px 5px;
 }
+#footer {
+  margin-left: 670px;
+  color: #243949;
+  font-size: 12px;
+}
