@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>vanilla-weather-app</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -30,12 +30,12 @@
                 <h1 id="city"></h1>
                 <h2></h2>
                 <h3 id="description"></h3>
+            </div>
+            <div class="col-6">
                 <span id="temp-today"></span>
                 <span class="units">
                     <a href="#" id="celsius-link">°C</a> |
                     <a href="#" id="fahrenheit-link">°F</a>
-            </div>
-            <div class="col-6">
                 <i class="fas fa-snowflake snowflake"></i>
             </div>
         </div>
@@ -87,11 +87,12 @@
                 <div class="temp">10°C 🌤</div>
             </div>
         </div>
+        <div id="footer"><a href="https://github.com/Ida-Lindberg/weather-app" target="_blank">Open-source code</a> <span id="signature"> by Ida
+            Lindberg</span></div>
+        </div>
     </div>
     </div>
-<div id="footer"><a href="https://github.com/Ida-Lindberg/weather-app" target="_blank">Open-source code</a> by Ida Lindberg</div>
-    </div>
-    
+
     <script src="src/app.js"></script>
 </body>
 </html>

@@ -5,7 +5,7 @@ body {
 h1,
 h2,
 h3 {
-  margin: 0 0 0 30px;
+  margin: 0 0 0 20px;
 }
 h1 {
   font-size: 25px;
@@ -26,6 +26,7 @@ h3 {
   background-image: linear-gradient(to right, #243949 0%, #517fa4 100%);
   background-clip: border-box;
   border: 1px solid rgba(0, 0, 0, 0.125);
+  margin-top: 20px;
 }
 
 .search-field {
@@ -60,7 +61,7 @@ h3 {
 }
 #temp-today {
   font-size: 30px;
-  margin: 0 0 0 30px;
+  margin: 0 0 0 20px;
 }
 #degrees-today {
   font-size: 15px;
@@ -81,8 +82,8 @@ h3 {
 .snowflake {
   position: relative;
   top: 40px;
-  left: 50px;
-  font-size: 120px;
+  left: 40px;
+  font-size: 80px;
 }
 .hour {
   margin-left: 5px;
@@ -91,7 +92,9 @@ h3 {
   margin: 0 0 30px 5px;
 }
 #footer {
-  margin-left: 370px;
-  color: #243949;
-  font-size: 12px;
+  margin-left: 20px;
+  font-size: 10px;
+}
+#signature {
+  font-size: 10px;
 }
