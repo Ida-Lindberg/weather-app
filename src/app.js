@@ -30,6 +30,9 @@ document.querySelector("#description").innerHTML = response.data.weather[0].desc
 document.querySelector("#humidity").innerHTML = response.data.main.humidity;
 document.querySelector("#icon").setAttribute("src",`http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
 document.querySelector("#icon").setAttribute("alt", response.data.weather[0].description);
+
+celsiusTemperature = response.data.main.temp;
+
 }
 
 function searchCity(city) {
@@ -59,14 +62,21 @@ function getCurrentLocation(event) {
 //Convert between celsius and fahrenheit (not working)
 function showCelsiusTemp(event) {
   event.preventDefault();
-  let celsiusTemp = document.querySelector("#celsius-link");
-  celsiusTemp.innerHTML = "19";
+  let tempToday = document.querySelector("#temp-today");
+  celsiusUnit.classList.add("active");
+  fahrenheitUnit.classList.remove("active");
+  tempToday.innerHTML = Math.round(celsiusTemperature);
 }
 function showFahrenheitTemp(event) {
   event.preventDefault();
-  let fahrenheitTemp = document.querySelector("#fahrenheit-link");
-  fahrenheitTemp.innerHTML = "66";
+  let tempToday = document.querySelector("#temp-today");
+  celsiusUnit.classList.remove("active");
+  fahrenheitUnit.classList.add("active");
+  let fahrenheitTemp = (celsiusTemperature * 9) / 5 + 32; 
+  tempToday.innerHTML = Math.round(fahrenheitTemp);
 }
+
+let celsiusTemperature = null;
 
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", handleSubmit);

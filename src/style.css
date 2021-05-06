@@ -72,6 +72,13 @@ h3::first-letter {
 .units {
   font-size: 14px;
 }
+.units .active {
+  color: rgb(33, 33, 33);
+  cursor: default;
+}
+.units .active:hover {
+  text-decoration: none;
+}
 .conditions {
   margin: 30px 15px 30px 30px;
   font-size: 12px;
