@@ -23,12 +23,13 @@ h2.innerHTML = formatDate(nowDate);
 //show temperature when using searchfield.
 
 function showWeatherTemp(response) {
-console.log(response.data);
 document.querySelector("#city").innerHTML = response.data.name;
- document.querySelector("#temp-today").innerHTML = Math.round(response.data.main.temp);
+document.querySelector("#temp-today").innerHTML = Math.round(response.data.main.temp);
 document.querySelector("#wind-today").innerHTML = Math.round(response.data.wind.speed);
-document.querySelector("#description").innerHTML = response.data.weather[0].main;
+document.querySelector("#description").innerHTML = response.data.weather[0].description;
 document.querySelector("#humidity").innerHTML = response.data.main.humidity;
+document.querySelector("#icon").setAttribute("src",`http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
+document.querySelector("#icon").setAttribute("alt", response.data.weather[0].description);
 }
 
 function searchCity(city) {
