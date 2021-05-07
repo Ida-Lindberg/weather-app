@@ -63,14 +63,16 @@ h3::first-letter {
   margin-top: 20px;
 }
 #temp-today {
-  font-size: 30px;
+  font-size: 70px;
   margin: 0 0 0 20px;
 }
 #degrees-today {
   font-size: 15px;
 }
 .units {
-  font-size: 14px;
+  position: relative;
+  top: -37px;
+  font-size: 16px;
 }
 .units .active {
   color: rgb(33, 33, 33);
@@ -80,7 +82,7 @@ h3::first-letter {
   text-decoration: none;
 }
 .conditions {
-  margin: 30px 15px 30px 30px;
+  margin: 0px 0px 30px 20px;
   font-size: 12px;
 }
 .sunrise {

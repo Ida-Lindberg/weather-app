@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>vanilla-weather-app</title>
+    <title>JS-vanilla-weather-app</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -13,7 +12,6 @@
     <script src="https://kit.fontawesome.com/ab3f42d3e0.js" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 </head>
-
 <body>
     <div class="container">
         <div class="card">
@@ -30,21 +28,20 @@
                 <h1 id="city"></h1>
                 <h2 id="date-time"></h2>
                 <h3 id="description"></h3>
+                <div class="conditions">
+                    <!-- <p class="sunrise">Sunrise <span id="sunrise"> 3:57</span> Sunset <span id="sunset">22:09</span></p>-->
+                    <p class="wind">Wind speed: <span id="wind-today">4</span> Km/h</p>
+                    <p class="humidity">Humidity: <span id="humidity">0</span> %</p>
+                </div>
             </div>
+            
             <div class="col-6">
-                <span id="temp-today"></span>
-                <span class="units">
-                    <a href="#" id="celsius-link"class="active">°C</a> |
+                <span id="temp-today"></span><span class="units">
+                    <a href="#" id="celsius-link" class="active">°C</a> |
                     <a href="#" id="fahrenheit-link">°F</a>
                 </span>
                 <img src="" alt="" id="icon"/>
             </div>
-        </div>
-
-        <div class="conditions">
-            <!-- <p class="sunrise">Sunrise <span id="sunrise"> 3:57</span> Sunset <span id="sunset">22:09</span></p>-->
-            <p class="wind">Wind speed <span id="wind-today">4</span> Km/h</p>
-            <p class="humidity">Humidity <span id="humidity">0</span> %</p>
         </div>
 
         <div class="row hour">
