@@ -101,11 +101,17 @@ h3::first-letter {
   top: -20px;
   font-size: 80px;
 }
-.hour {
-  margin-left: 5px;
+.weather-forecast {
+  text-align: center;
 }
-.temperature {
-  margin: 0 0 30px 5px;
+.weather-forecast-date {
+  font-size: 16px;
+}
+.weather-forecast-temperatures {
+  font-size: 13px;
+}
+.weather-forecast-temperatures-min {
+  opacity: 0.7;
 }
 #footer {
   margin-left: 20px;
