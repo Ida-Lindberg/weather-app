@@ -14,7 +14,7 @@ let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "S
 
  return `${days[dayIndex]}, ${hours}:${minutes}`;
  }
-
+//show day on forecast
  function formatDay(timestamp) {
 let date  = new Date(timestamp * 1000);
 let day = date.getDay();
@@ -101,35 +101,10 @@ function getCurrentLocation(event) {
   navigator.geolocation.getCurrentPosition(searchLocation);
 }
 
-//Convert between celsius and fahrenheit (not working)
-function showCelsiusTemp(event) {
-  event.preventDefault();
-  let tempToday = document.querySelector("#temp-today");
-  celsiusUnit.classList.add("active");
-  fahrenheitUnit.classList.remove("active");
-  tempToday.innerHTML = Math.round(celsiusTemperature);
-}
-function showFahrenheitTemp(event) {
-  event.preventDefault();
-  let tempToday = document.querySelector("#temp-today");
-  celsiusUnit.classList.remove("active");
-  fahrenheitUnit.classList.add("active");
-  let fahrenheitTemp = (celsiusTemperature * 9) / 5 + 32; 
-  tempToday.innerHTML = Math.round(fahrenheitTemp);
-}
-
-let celsiusTemperature = null;
-
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", handleSubmit);
 
 let geoLocationButton = document.querySelector("#location-button");
 geoLocationButton.addEventListener("click", getCurrentLocation);
-
-let celsiusUnit = document.querySelector("#celsius-link");
-celsiusUnit.addEventListener("click", showCelsiusTemp);
-
-let fahrenheitUnit = document.querySelector("#fahrenheit-link");
-fahrenheitUnit.addEventListener("click", showFahrenheitTemp);
 
 searchCity("London");
