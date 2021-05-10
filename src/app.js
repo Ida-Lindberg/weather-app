@@ -52,7 +52,6 @@ let h2 = document.querySelector("h2");
 let nowDate = new Date();
 h2.innerHTML = formatDate(nowDate);
 
-
 //show temperature when using searchfield.
 
 function getForecast(coordinates) {

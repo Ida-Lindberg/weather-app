@@ -34,7 +34,7 @@ h3::first-letter {
 
 .search-field {
   max-width: 40%;
-  margin: 15px 0px 0px 120px;
+  margin: 15px 0px 0px 80px;
   border-radius: 5px;
 }
 .submit-button {
@@ -79,13 +79,6 @@ h3::first-letter {
   top: -37px;
   font-size: 16px;
 }
-.units .active {
-  color: rgb(33, 33, 33);
-  cursor: default;
-}
-.units .active:hover {
-  text-decoration: none;
-}
 .conditions {
   margin: 0px 0px 30px 20px;
   font-size: 12px;
@@ -106,7 +99,7 @@ h3::first-letter {
   margin-bottom: 20px;
 }
 .weather-forecast-date {
-  font-size: 16px;
+  font-size: 15px;
 }
 .weather-forecast-temperatures {
   font-size: 13px;
