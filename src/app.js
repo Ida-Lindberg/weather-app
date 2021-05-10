@@ -15,6 +15,28 @@ let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "S
  return `${days[dayIndex]}, ${hours}:${minutes}`;
  }
 
+ function displayForecast() {
+   let forecastElement = document.querySelector("#forecast");
+
+   let forecastHTML = `<div class="row">`;
+   let days = ["Tue", "Wed", "Thu", "Fri", "Sat"];
+   days.forEach(function (day) {
+     forecastHTML = 
+   forecastHTML + `
+        <div class="col-2">
+            <div class="weather-forecast-date">${day}</div>
+            <img src="https://www.pngkey.com/png/full/458-4589113_transparent-cloud-outline-line-art.png"alt=""width="42"/>
+            <div class="weather-forecast-temperatures">
+                <span class="weather-forecast-temperatures-max">18</span>
+                <span class="weather-forecast-temperatures-min">12</span>
+            </div>
+        </div>
+        `;
+   });
+        forecastHTML = forecastHTML + `</div>`;
+   forecastElement.innerHTML = forecastHTML;
+ }
+
 let h2 = document.querySelector("h2");
 let nowDate = new Date();
 h2.innerHTML = formatDate(nowDate);
@@ -91,3 +113,4 @@ let fahrenheitUnit = document.querySelector("#fahrenheit-link");
 fahrenheitUnit.addEventListener("click", showFahrenheitTemp);
 
 searchCity("London");
+displayForecast();
